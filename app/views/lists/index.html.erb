@@ -2,6 +2,12 @@
     <h1>Best movies</h1>
 </header>
 <main>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_960_720.jpg);">
+    <div class="container">
+      <h1><strong>Best Movies</strong></h1>
+      <a class="btn btn-flat" href="#">Apply now</a>
+    </div>
+  </div>
     <h2>Movie Lists</h2>
   <ul class="list-cards">
     <% @lists.each do |list| %>
@@ -13,4 +19,36 @@
       <%= link_to 'add movie', new_list_path %>
     </li>
   </ul>
+
+  <div class="container my-5">
+  <div class="d-flex justify-content-between align-item-center my-5">
+    <h2>Choose your favorite category</h2>
+  </div>
+
+  <div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1534188278934-76700c2da08b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)">
+    Action
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.pixabay.com/photo/2019/09/17/05/42/red-rose-4482540_960_720.jpg)">
+    Love
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.pixabay.com/photo/2017/09/19/09/25/halloween-2764651_960_720.jpg)">
+    Horror
+  </div>
+
+   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1579972668140-f7da53ccc2a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80)">
+    Science Fiction
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.pixabay.com/photo/2011/12/21/00/58/action-hero-11214_960_720.jpg)">
+      Super Heroes
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1515041219749-89347f83291a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80)">
+      Kids
+    </div>
+</div>
+
 </main>
