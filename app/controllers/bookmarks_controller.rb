@@ -13,6 +13,7 @@ class BookmarksController < ApplicationController
       redirect_to list_path(@list)
     else
       render :new
+    end
   end
 
   def destroy
