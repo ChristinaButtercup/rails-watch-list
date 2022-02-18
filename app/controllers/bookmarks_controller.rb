@@ -3,8 +3,6 @@ class BookmarksController < ApplicationController
     @bookmarks = Bookmark.all
   end
 
-
-
   def new
     @bookmark = Bookmark.new
   end
