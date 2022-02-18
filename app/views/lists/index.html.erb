@@ -18,7 +18,16 @@
     <li class="add-list">
       <%= link_to 'add movie', new_list_path %>
     </li>
+    <%= simple_form_for [ @lists, @movie ] do |f| %>
+    <%= f.input :content %>
+    <%= f.submit "Add movie", class: "btn btn-primary" %>
+<% end %>
   </ul>
+
+  <%= simple_form_for [ @lists, @movie ] do |f| %>
+  <%= f.input :content %>
+  <%= f.submit "Add movie", class: "btn btn-primary" %>
+<% end %>
 
   <div class="container my-5">
   <div class="d-flex justify-content-between align-item-center my-5">
